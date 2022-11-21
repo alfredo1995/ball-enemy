@@ -4,9 +4,9 @@ Configure o player e adicione uma textura
       2. Renomeie-o como "Player", redefina sua posiçãoe aumente sua escala XYZpara 1,5
       3. Adicionar um componente RigidBodyaoPlayer 
       4. NaBiblioteca > Texturas, arraste umatexturapara aesfera
-
---------------------------- 1.1 Configurando câmera do jogo  ---------------------------
-
+<br>
+1.1 Configurando câmera do jogo
+<br>
 
 0. Crie um ponto focal para a câmera
 1. Crie um novoObjeto Vazioe renomeie-o como "Ponto Focal",
