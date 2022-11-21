@@ -6,7 +6,7 @@ Configure o player e adicione uma textura
       4. NaBiblioteca > Texturas, arraste umatexturapara aesfera
 <br>
 
-0. Configurando câmera do jogo
+Configurando câmera do jogo
 0. Crie um ponto focal para a câmera
 1. Crie um novoObjeto Vazioe renomeie-o como "Ponto Focal",
 2. Redefina sua posição para a origem (0, 0, 0) e faça da câmera umobjeto filhodela
