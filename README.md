@@ -5,7 +5,7 @@ Configure o player e adicione uma textura
       3. Adicionar um componente RigidBodyaoPlayer 
       4. NaBiblioteca > Texturas, arraste umatexturapara aesfera
 
-1.1 Configurando câmera do jogo
+0. Configurando câmera do jogo
 
 0. Crie um ponto focal para a câmera
 1. Crie um novoObjeto Vazioe renomeie-o como "Ponto Focal",
@@ -29,7 +29,7 @@ Configure o player e adicione uma textura
          }
 
 
-1.2 Configurando movimento do jogador 
+0. Configurando movimento do jogador 
 
 0. Adicione força para a frente ao jogador
 1. Crie um novo script "PlayerController", aplique-o aoPlayer e abra-o
@@ -38,7 +38,7 @@ Configure o player e adicione uma textura
 4. EmUpdate(), declare uma nova variável forwardInputcom base na entrada "Vertical"
 5. Chame o método AddForce() para mover o player para a frente com base emforwardInput
 
-//Mova-se de acordo com a camera em direção ao ponto focal
+0. Mova-se de acordo com a camera em direção ao ponto focal
 1. Declare um novoGameObject focalPoint privado; e inicializá-lo emStart():focalPoint = GameObject.Find("Ponto Focal");
 2. Na chamada AddForce, substitua Vector3.forward porfocalPoint.transform.forward
 
@@ -61,7 +61,7 @@ Configure o player e adicione uma textura
              }
          }
 
-1.3 Configurando inimigo do jogador 
+0. Configurando inimigo do jogador 
 
 0. Adicione um inimigo e um material de física
 1. Crie uma nova esfera, renomeie-a "Enemy", reposicione-a e arraste uma textura para ela
