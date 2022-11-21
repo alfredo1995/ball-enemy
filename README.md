@@ -16,7 +16,7 @@ Configure o player e adicione uma textura
 
 0. Gire o ponto focal pela entrada do usuário
 1. Crie o código para girar a câmera com base emrotationSpeedehorizontalInput
-2. Ajuste o valor da velocidade de rotaçãopara obter a velocidade desejada
+2. Ajuste o valor da velocidade de rotaçãopara obter a velocidade desejada <br>
 
          public class RotateCamera : MonoBehaviour
          {
@@ -39,9 +39,9 @@ Configure o player e adicione uma textura
 
 0. Mova-se de acordo com a camera em direção ao ponto focal
 1. Declare um novoGameObject focalPoint privado; e inicializá-lo emStart():focalPoint = GameObject.Find("Ponto Focal");
-2. Na chamada AddForce, substitua Vector3.forward porfocalPoint.transform.forward
+2. Na chamada AddForce, substitua Vector3.forward porfocalPoint.transform.forward <br>
 
-<br>
+
          public class PlayerController : MonoBehaviour
          {
              public float speed = 2.0f;
@@ -74,10 +74,10 @@ Configure o player e adicione uma textura
 1. Faça um novo script "Inimigo" e anexe-o aoInimigo
 2. Declarar 3 novas variáveis para Rigidbody enemyRb; ,GameObject jogador; e velocidade de flutuação pública;
 3. Inicializar enemyRb = GetComponent<Rigidbody>(); e player = GameObject.Find("Player");
-4. EmUpdate(), AddForce em direção na direção entre o jogador e o inimigo
+4. EmUpdate(), AddForce em direção na direção entre o jogador e o inimigo <br>
    
    
-  <br> 
+
             public class Enemy : MonoBehaviour
             {
                 public float speed = 1.0f;
