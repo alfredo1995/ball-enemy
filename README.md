@@ -77,19 +77,19 @@ Configurando inimigo do jogador
 
    
 
-            public class Enemy : MonoBehaviour
-            {
-                public float speed = 1.0f;
-                private Rigidbody enemyRb;
-                private GameObject player;
+      public class Enemy : MonoBehaviour
+      {
+        public float speed = 1.0f;
+        private Rigidbody enemyRb;
+        private GameObject player;
 
-                void Start()
-                {
-                    enemyRb = GetComponent<Rigidbody>();
-                    player = GameObject.Find("Player");
-                }
-                void Update()
-                {
-                    enemyRb.AddForce((player.transform.position - transform.position).normalized * speed);
-                }
-            }
+        void Start()
+        {
+         enemyRb = GetComponent<Rigidbody>();
+         player = GameObject.Find("Player");
+        }
+         void Update()
+         {
+          enemyRb.AddForce((player.transform.position - transform.position).normalized * speed);
+         }
+      }
