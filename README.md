@@ -52,3 +52,21 @@ Crie um script inimigo para seguir o jogador
    2. Declarar 3 novas variáveis para Rigidbody enemyRb; ,GameObject jogador; e velocidade de flutuação pública;
    3. Inicializar enemyRb = GetComponent<Rigidbody>(); e player = GameObject.Find("Player");
    4. EmUpdate(), AddForce em direção na direção entre o jogador e o inimigo
+
+
+         public class Enemy : MonoBehaviour
+         {
+             public float speed = 1.0f;
+             private Rigidbody enemyRb;
+             private GameObject player;
+
+             void Start()
+             {
+                 enemyRb = GetComponent<Rigidbody>();
+                 player = GameObject.Find("Player");
+             }
+             void Update()
+             {
+                 enemyRb.AddForce((player.transform.position - transform.position).normalized * speed);
+             }
+         }
