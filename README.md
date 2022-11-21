@@ -4,9 +4,9 @@ Configure o player e adicione uma textura
       2. Renomeie-o como "Player", redefina sua posiçãoe aumente sua escala XYZpara 1,5
       3. Adicionar um componente RigidBodyaoPlayer 
       4. NaBiblioteca > Texturas, arraste umatexturapara aesfera
+<br>
 
 0. Configurando câmera do jogo
-
 0. Crie um ponto focal para a câmera
 1. Crie um novoObjeto Vazioe renomeie-o como "Ponto Focal",
 2. Redefina sua posição para a origem (0, 0, 0) e faça da câmera umobjeto filhodela
@@ -27,10 +27,9 @@ Configure o player e adicione uma textura
                  transform.Rotate(Vector3.up, horizontalInput * rotateSpeed * Time.deltaTime);
              }
          }
-
+<br>
 
 0. Configurando movimento do jogador 
-
 0. Adicione força para a frente ao jogador
 1. Crie um novo script "PlayerController", aplique-o aoPlayer e abra-o
 2. Declarar uma nova variável de velocidade de flutuação públicae inicializá-la
@@ -61,8 +60,9 @@ Configure o player e adicione uma textura
              }
          }
 
-0. Configurando inimigo do jogador 
+<br>
 
+0. Configurando inimigo do jogador
 0. Adicione um inimigo e um material de física
 1. Crie uma nova esfera, renomeie-a "Enemy", reposicione-a e arraste uma textura para ela
 2. Adicione um novo componente RigidBody e ajuste sua escala XYZ e, em seguida, teste
