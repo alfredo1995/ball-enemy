@@ -42,8 +42,8 @@ Configurando movimento do jogador
       2. Na chamada AddForce, substitua Vector3.forward porfocalPoint.transform.forward <br><br>
 
 
-         public class PlayerController : MonoBehaviour
-         {
+      public class PlayerController : MonoBehaviour
+      {
              public float speed = 2.0f;
              private Rigidbody playerRb;
 
@@ -58,7 +58,7 @@ Configurando movimento do jogador
                  float forwardInput = Input.GetAxis("Vertical");
                  playerRb.AddForce(pontoFocal.transform.forward * forwardInput * speed);
              }
-         }
+      }
 
 <br>
 
