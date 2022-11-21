@@ -7,11 +7,13 @@ Configure o player e adicione uma textura
 <br>
 
 Configurando câmera do jogo
+
 0. Crie um ponto focal para a câmera
 1. Crie um novoObjeto Vazioe renomeie-o como "Ponto Focal",
 2. Redefina sua posição para a origem (0, 0, 0) e faça da câmera umobjeto filhodela
 3. Crie uma nova pasta "Scripts" e um novo script "RotateCamera" dentro dela
 4. Anexeo script "RotateCamera" aoPonto Focal
+
 0. Gire o ponto focal pela entrada do usuário
 1. Crie o código para girar a câmera com base emrotationSpeedehorizontalInput
 2. Ajuste o valor da velocidade de rotaçãopara obter a velocidade desejada <br><br>
