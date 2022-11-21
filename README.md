@@ -4,9 +4,8 @@ Configure o player e adicione uma textura
       2. Renomeie-o como "Player", redefina sua posiçãoe aumente sua escala XYZpara 1,5
       3. Adicionar um componente RigidBodyaoPlayer 
       4. NaBiblioteca > Texturas, arraste umatexturapara aesfera
-<br>
+
 1.1 Configurando câmera do jogo
-<br>
 
 0. Crie um ponto focal para a câmera
 1. Crie um novoObjeto Vazioe renomeie-o como "Ponto Focal",
@@ -30,7 +29,7 @@ Configure o player e adicione uma textura
          }
 
 
---------------------------- 1.2 Configurando movimento do jogador ---------------------------
+1.2 Configurando movimento do jogador 
 
 0. Adicione força para a frente ao jogador
 1. Crie um novo script "PlayerController", aplique-o aoPlayer e abra-o
@@ -62,7 +61,7 @@ Configure o player e adicione uma textura
              }
          }
 
---------------------------- 1.3 Configurando inimigo do jogador ---------------------------
+1.3 Configurando inimigo do jogador 
 
 0. Adicione um inimigo e um material de física
 1. Crie uma nova esfera, renomeie-a "Enemy", reposicione-a e arraste uma textura para ela
