@@ -48,15 +48,17 @@ Configurando movimento do jogador
              private Rigidbody playerRb;
 
              private GameObject pontoFocal;
+             
              void Start()
              {
-                 playerRb = GetComponent<Rigidbody>();
-                 pontoFocal = GameObject.Find("Ponto Focal");
+                playerRb = GetComponent<Rigidbody>();
+                pontoFocal = GameObject.Find("Ponto Focal");
              }
+             
              void Update()
              {
-                 float forwardInput = Input.GetAxis("Vertical");
-                 playerRb.AddForce(pontoFocal.transform.forward * forwardInput * speed);
+                float forwardInput = Input.GetAxis("Vertical");
+                playerRb.AddForce(pontoFocal.transform.forward * forwardInput * speed);
              }
       }
 
@@ -79,17 +81,18 @@ Configurando inimigo do jogador
 
       public class Enemy : MonoBehaviour
       {
-        public float speed = 1.0f;
-        private Rigidbody enemyRb;
-        private GameObject player;
+         public float speed = 1.0f;
+         private Rigidbody enemyRb;
+         private GameObject player;
 
-        void Start()
-        {
+         void Start()
+         {
          enemyRb = GetComponent<Rigidbody>();
          player = GameObject.Find("Player");
-        }
+         }
+        
          void Update()
          {
           enemyRb.AddForce((player.transform.position - transform.position).normalized * speed);
          }
-      }
+       }
