@@ -41,7 +41,7 @@ Configure o player e adicione uma textura
 1. Declare um novoGameObject focalPoint privado; e inicializá-lo emStart():focalPoint = GameObject.Find("Ponto Focal");
 2. Na chamada AddForce, substitua Vector3.forward porfocalPoint.transform.forward
 
-
+<br>
          public class PlayerController : MonoBehaviour
          {
              public float speed = 2.0f;
@@ -77,7 +77,7 @@ Configure o player e adicione uma textura
 4. EmUpdate(), AddForce em direção na direção entre o jogador e o inimigo
    
    
-   
+  <br> 
             public class Enemy : MonoBehaviour
             {
                 public float speed = 1.0f;
