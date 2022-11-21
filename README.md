@@ -74,7 +74,7 @@ Configure o player e adicione uma textura
 1. Faça um novo script "Inimigo" e anexe-o aoInimigo
 2. Declarar 3 novas variáveis para Rigidbody enemyRb; ,GameObject jogador; e velocidade de flutuação pública;
 3. Inicializar enemyRb = GetComponent<Rigidbody>(); e player = GameObject.Find("Player");
-4. EmUpdate(), AddForce em direção na direção entre o jogador e o inimigo <br>
+4. EmUpdate(), AddForce em direção na direção entre o jogador e o inimigo <br><br><br>
    
    
 
