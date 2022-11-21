@@ -20,6 +20,18 @@ Gire o ponto focal pela entrada do usuário
    1. Crie o código para girar a câmera com base emrotationSpeedehorizontalInput
    2. Ajuste o valor da velocidade de rotaçãopara obter a velocidade desejada
 
+---
+
+      public class RotateCamera : MonoBehaviour
+      {
+          public float rotateSpeed;
+          void Update()
+          {
+              float horizontalInput = Input.GetAxis("Horizontal");
+              transform.Rotate(Vector3.up, horizontalInput * rotateSpeed * Time.deltaTime);
+          }
+      }
+
 
 --------------------------- 1.2 Configurando movimento do jogador ---------------------------
 
@@ -35,6 +47,26 @@ Mova-se de acordo com a camera em direção ao ponto focal
 
    1. Declare um novoGameObject focalPoint privado; e inicializá-lo emStart():focalPoint = GameObject.Find("Ponto Focal");
    2. Na chamada AddForce, substitua Vector3.forward porfocalPoint.transform.forward
+
+---
+
+      public class PlayerController : MonoBehaviour
+      {
+          public float speed = 2.0f;
+          private Rigidbody playerRb;
+
+          private GameObject pontoFocal;
+          void Start()
+          {
+              playerRb = GetComponent<Rigidbody>();
+              pontoFocal = GameObject.Find("Ponto Focal");
+          }
+          void Update()
+          {
+              float forwardInput = Input.GetAxis("Vertical");
+              playerRb.AddForce(pontoFocal.transform.forward * forwardInput * speed);
+          }
+      }
 
 --------------------------- 1.3 Configurando inimigo do jogador ---------------------------
 
