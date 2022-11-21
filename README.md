@@ -30,6 +30,7 @@ Configurando câmera do jogo
 <br>
 
 Configurando movimento do jogador 
+
 0. Adicione força para a frente ao jogador
 1. Crie um novo script "PlayerController", aplique-o aoPlayer e abra-o
 2. Declarar uma nova variável de velocidade de flutuação públicae inicializá-la
@@ -62,6 +63,7 @@ Configurando movimento do jogador
 <br>
 
 Configurando inimigo do jogador
+
 0. Adicione um inimigo e um material de física
 1. Crie uma nova esfera, renomeie-a "Enemy", reposicione-a e arraste uma textura para ela
 2. Adicione um novo componente RigidBody e ajuste sua escala XYZ e, em seguida, teste
