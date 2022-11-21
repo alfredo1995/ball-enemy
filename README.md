@@ -14,9 +14,9 @@ Configurando câmera do jogo
       3. Crie uma nova pasta "Scripts" e um novo script "RotateCamera" dentro dela
       4. Anexeo script "RotateCamera" aoPonto Focal
 
-0. Gire o ponto focal pela entrada do usuário
-1. Crie o código para girar a câmera com base emrotationSpeedehorizontalInput
-2. Ajuste o valor da velocidade de rotaçãopara obter a velocidade desejada <br><br>
+      0. Gire o ponto focal pela entrada do usuário
+      1. Crie o código para girar a câmera com base emrotationSpeedehorizontalInput
+      2. Ajuste o valor da velocidade de rotaçãopara obter a velocidade desejada <br><br>
 
          public class RotateCamera : MonoBehaviour
          {
