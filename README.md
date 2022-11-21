@@ -49,6 +49,6 @@ Adicione um inimigo e um material de física
 Crie um script inimigo para seguir o jogador
 
    1. Faça um novo script "Inimigo" e anexe-o aoInimigo
-   2. Declarar 3 novas variáveis paraRigidbody enemyRb; ,GameObject jogador; evelocidade de flutuação pública;
-   3. InicializarenemyRb = GetComponent<Rigidbody>(); ejogador = GameObject.Find("Player");
+   2. Declarar 3 novas variáveis para Rigidbody enemyRb; ,GameObject jogador; e velocidade de flutuação pública;
+   3. Inicializar enemyRb = GetComponent<Rigidbody>(); e player = GameObject.Find("Player");
    4. EmUpdate(), AddForce em direção na direção entre o jogador e o inimigo
