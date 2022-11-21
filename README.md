@@ -54,7 +54,6 @@ Crie um script inimigo para seguir o jogador
    4. EmUpdate(), AddForce em direção na direção entre o jogador e o inimigo
 
 
-         public class Enemy : MonoBehaviour
          {
              public float speed = 1.0f;
              private Rigidbody enemyRb;
