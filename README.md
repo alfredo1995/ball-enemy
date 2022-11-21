@@ -22,22 +22,24 @@ Configurando câmera do jogo
       public class RotateCamera : MonoBehaviour
       {
         public float rotateSpeed;
-        void Update(){
+        
+        void Update()
+        {
           float horizontalInput = Input.GetAxis("Horizontal");
           transform.Rotate(Vector3.up, horizontalInput * rotateSpeed * Time.deltaTime);
 <br>
 
 Configurando movimento do jogador 
 
-0. Adicione força para a frente ao jogador
-1. Crie um novo script "PlayerController", aplique-o aoPlayer e abra-o
-2. Declarar uma nova variável de velocidade de flutuação públicae inicializá-la
-3. Declare um novoRigidbody playerRb privadoe inicialize-o emStart()
-4. EmUpdate(), declare uma nova variável forwardInputcom base na entrada "Vertical"
-5. Chame o método AddForce() para mover o player para a frente com base emforwardInput
-0. Mova-se de acordo com a camera em direção ao ponto focal
-1. Declare um novoGameObject focalPoint privado; e inicializá-lo emStart():focalPoint = GameObject.Find("Ponto Focal");
-2. Na chamada AddForce, substitua Vector3.forward porfocalPoint.transform.forward <br><br>
+      0. Adicione força para a frente ao jogador
+      1. Crie um novo script "PlayerController", aplique-o aoPlayer e abra-o
+      2. Declarar uma nova variável de velocidade de flutuação públicae inicializá-la
+      3. Declare um novoRigidbody playerRb privadoe inicialize-o emStart()
+      4. EmUpdate(), declare uma nova variável forwardInputcom base na entrada "Vertical"
+      5. Chame o método AddForce() para mover o player para a frente com base emforwardInput
+      0. Mova-se de acordo com a camera em direção ao ponto focal
+      1. Declare um novoGameObject focalPoint privado; e inicializá-lo emStart():focalPoint = GameObject.Find("Ponto Focal");
+      2. Na chamada AddForce, substitua Vector3.forward porfocalPoint.transform.forward <br><br>
 
 
          public class PlayerController : MonoBehaviour
@@ -62,17 +64,17 @@ Configurando movimento do jogador
 
 Configurando inimigo do jogador
 
-0. Adicione um inimigo e um material de física
-1. Crie uma nova esfera, renomeie-a "Enemy", reposicione-a e arraste uma textura para ela
-2. Adicione um novo componente RigidBody e ajuste sua escala XYZ e, em seguida, teste
-3. Em uma nova pasta "Physics Materials",Crie > Physics Material,em seguida, nomeie-o "Bouncy"
-4. Aumente a recompensa para "1", altereBounce Combinepara "Multiply", aplique-a ao seu jogador e inimigo e, em seguida,teste 
-0. Crie um script inimigo para seguir o jogador
-1. Faça um novo script "Inimigo" e anexe-o aoInimigo
-2. Declarar 3 novas variáveis para Rigidbody enemyRb; ,GameObject jogador; e velocidade de flutuação pública;
-3. Inicializar enemyRb = GetComponent<Rigidbody>(); e player = GameObject.Find("Player");
-4. EmUpdate(), AddForce em direção na direção entre o jogador e o inimigo <br><br>
-   
+      0. Adicione um inimigo e um material de física
+      1. Crie uma nova esfera, renomeie-a "Enemy", reposicione-a e arraste uma textura para ela
+      2. Adicione um novo componente RigidBody e ajuste sua escala XYZ e, em seguida, teste
+      3. Em uma nova pasta "Physics Materials",Crie > Physics Material,em seguida, nomeie-o "Bouncy"
+      4. Aumente a recompensa para "1", altereBounce Combinepara "Multiply", aplique-a ao seu jogador e inimigo e, em seguida,teste 
+      0. Crie um script inimigo para seguir o jogador
+      1. Faça um novo script "Inimigo" e anexe-o aoInimigo
+      2. Declarar 3 novas variáveis para Rigidbody enemyRb; ,GameObject jogador; e velocidade de flutuação pública;
+      3. Inicializar enemyRb = GetComponent<Rigidbody>(); e player = GameObject.Find("Player");
+      4. EmUpdate(), AddForce em direção na direção entre o jogador e o inimigo <br><br>
+
    
 
             public class Enemy : MonoBehaviour
