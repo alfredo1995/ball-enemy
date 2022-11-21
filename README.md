@@ -20,17 +20,17 @@ Gire o ponto focal pela entrada do usuário
    1. Crie o código para girar a câmera com base emrotationSpeedehorizontalInput
    2. Ajuste o valor da velocidade de rotaçãopara obter a velocidade desejada
 
----
 
-      public class RotateCamera : MonoBehaviour
-      {
-          public float rotateSpeed;
-          void Update()
-          {
-              float horizontalInput = Input.GetAxis("Horizontal");
-              transform.Rotate(Vector3.up, horizontalInput * rotateSpeed * Time.deltaTime);
-          }
-      }
+
+         public class RotateCamera : MonoBehaviour
+         {
+             public float rotateSpeed;
+             void Update()
+             {
+                 float horizontalInput = Input.GetAxis("Horizontal");
+                 transform.Rotate(Vector3.up, horizontalInput * rotateSpeed * Time.deltaTime);
+             }
+         }
 
 
 --------------------------- 1.2 Configurando movimento do jogador ---------------------------
